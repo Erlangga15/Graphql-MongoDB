@@ -20,6 +20,7 @@ mongoose.connect(
   }
 );
 
+//Use ApolloServer
 const server = new ApolloServer({ typeDefs, resolvers });
 
 server.listen().then(({ url }) => {
